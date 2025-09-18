@@ -11,7 +11,6 @@ function Home() {
       style={{ backgroundImage: `url(${bgimg})` }}
     >
       <div className="container text-white text-center flex flex-col justify-center items-center gap-2 mt-24">
-        {/* Profile Image */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -19,10 +18,17 @@ function Home() {
           viewport={{ once: true }}
           className="w-full max-w-[120px] sm:max-w-[150px] md:max-w-[200px] mx-auto"
         >
-          <img
+          <motion.img
             src={myImg}
             alt="Profile"
             className="w-full h-auto object-cover rounded-full shadow-md"
+            animate={{ y: [0, -15, 0] }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              repeatType: "loop",
+              ease: "easeInOut",
+            }}
           />
         </motion.div>
 

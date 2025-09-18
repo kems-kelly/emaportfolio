@@ -4,8 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import kolos from "../assets/Images/kolofund.jpg";
 import checkai from "../assets/Images/checkAi.png";
 import health from "../assets/Images/healthaxis.png";
-
-// Add 3 more placeholders (replace with real images later)
 import proj4 from "../assets/Images/projects1.png";
 import proj5 from "../assets/Images/projects2.png";
 import proj6 from "../assets/Images/projects3.png";
@@ -43,9 +41,10 @@ const projects = [
     desc: "Healthcare SaaS platform focused on better data management.",
     img: health,
     links: {
-      figma: "https://www.figma.com/",
-      behance: "https://www.behance.net/",
-      live: "https://www.behance.net/",
+      figma:
+        "https://www.figma.com/proto/6xgTXJwe9KjJLQBUvQjeVC/HealthAxis?page-id=268%3A9010&node-id=317-7160&viewport=539%2C382%2C0.02&t=peANeauGyJkCFdui-1&scaling=min-zoom&content-scaling=fixed",
+      behance:
+        "https://www.behance.net/gallery/234250419/Seamless-Patient-and-Hospital-Management-System-(SaaS)",
     },
   },
   {
@@ -54,9 +53,11 @@ const projects = [
     desc: "Concept project showcasing creative interactions.",
     img: proj4,
     links: {
-      figma: "https://www.figma.com/",
-      behance: "https://www.behance.net/",
-      live: "https://www.behance.net/",
+      figma:
+        "https://www.figma.com/design/zkTIMSB81MjlyctqnP1Vwv/KoloFund?node-id=727-24206&t=1L7d6YIGoYCJpua7-1",
+      behance:
+        "https://www.behance.net/gallery/186984891/Check-AI-An-AI-Bias-Detection-Tool-(UI-UX-Case-Study)/modules/1057299763",
+      live: "https://www.figma.com/design/zkTIMSB81MjlyctqnP1Vwv/KoloFund?node-id=727-24206&t=1L7d6YIGoYCJpua7-1",
     },
   },
   {
@@ -65,9 +66,10 @@ const projects = [
     desc: "Modern UI exploration with emphasis on scalability.",
     img: proj5,
     links: {
-      figma: "https://www.figma.com/",
-      behance: "https://www.behance.net/",
-      live: "https://www.behance.net/",
+      figma:
+        "https://www.figma.com/design/zkTIMSB81MjlyctqnP1Vwv/KoloFund?node-id=727-24206&t=1L7d6YIGoYCJpua7-1",
+      behance:
+        "https://www.behance.net/gallery/186984891/Check-AI-An-AI-Bias-Detection-Tool-(UI-UX-Case-Study)/modules/1057299763",
     },
   },
   {
@@ -76,9 +78,11 @@ const projects = [
     desc: "End-to-end product design case study with live prototype.",
     img: proj6,
     links: {
-      figma: "https://www.figma.com/",
-      behance: "https://www.behance.net/",
-      live: "https://www.behance.net/",
+      figma:
+        "https://www.figma.com/design/zkTIMSB81MjlyctqnP1Vwv/KoloFund?node-id=727-24206&t=1L7d6YIGoYCJpua7-1",
+      behance:
+        "https://www.behance.net/gallery/186984891/Check-AI-An-AI-Bias-Detection-Tool-(UI-UX-Case-Study)/modules/1057299763",
+      live: "https://www.figma.com/design/zkTIMSB81MjlyctqnP1Vwv/KoloFund?node-id=727-24206&t=1L7d6YIGoYCJpua7-1",
     },
   },
 ];
@@ -126,7 +130,7 @@ export default function FeaturedProjects() {
                   </h3>
                   <p className="text-paragraph text-sm mt-2">{proj.desc}</p>
                   <div className="flex gap-3 mt-4 flex-wrap">
-                    {proj.links.figma && (
+                    {proj.links.figma?.trim() && (
                       <a
                         href={proj.links.figma}
                         target="_blank"
@@ -136,7 +140,7 @@ export default function FeaturedProjects() {
                         Figma
                       </a>
                     )}
-                    {proj.links.behance && (
+                    {proj.links.behance?.trim() && (
                       <a
                         href={proj.links.behance}
                         target="_blank"
@@ -146,7 +150,7 @@ export default function FeaturedProjects() {
                         Behance
                       </a>
                     )}
-                    {proj.links.live && (
+                    {proj.links.live?.trim() && (
                       <a
                         href={proj.links.live}
                         target="_blank"
@@ -163,7 +167,6 @@ export default function FeaturedProjects() {
           </AnimatePresence>
         </div>
 
-        {/* Show More / Show Less */}
         <div className="flex justify-center mt-12">
           <motion.button
             whileTap={{ scale: 0.95 }}
@@ -175,6 +178,7 @@ export default function FeaturedProjects() {
           </motion.button>
         </div>
       </div>
+
       <div className=" section container bg-gradient-to-r from-[#10ABFF] to-[#4B45FF] mt-32">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-thin text-heading">
@@ -195,7 +199,7 @@ export default function FeaturedProjects() {
         >
           <a
             href="#contact"
-            className="px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg bg-black text-primary ont-semibold shadow-lg hover:bg-bg-gradient-to-b  transition-transform duration-300 hover:scale-105 text-center 
+            className="px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg bg-black text-primary font-semibold shadow-lg hover:bg-bg-gradient-to-b  transition-transform duration-300 hover:scale-105 text-center 
                text-sm sm:text-base md:text-lg cursor-pointer"
           >
             Start a Project

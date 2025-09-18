@@ -93,7 +93,7 @@ export default function Contact() {
               ></textarea>
               <button
                 type="submit"
-                className="w-full px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg
+                className="px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg
                  bg-gradient-to-r from-[#10ABFF] to-[#4B45FF]
                  text-paragraph font-semibold shadow-lg
                  transition-transform duration-300 hover:scale-105

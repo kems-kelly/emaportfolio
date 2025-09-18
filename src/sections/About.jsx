@@ -36,6 +36,15 @@ function About() {
               exploring new technologies, contributing to open-source projects,
               or mentoring aspiring designers and developers.
             </p>
+            <a
+              href="https://drive.google.com/file/d/1gK-KtPax47f6ChLnzn0uEcRQGMd2UHds/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg bg-gradient-to-r from-[#10ABFF] to-[#4B45FF] text-paragraph font-semibold shadow-lg hover:bg-bg-gradient-to-b  transition-transform duration-300 hover:scale-105 text-center 
+               text-sm sm:text-base md:text-lg cursor-pointer mt-10"
+            >
+              Download CV
+            </a>
           </motion.div>
 
           {/* Right Column: Skills */}

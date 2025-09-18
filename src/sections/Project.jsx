@@ -179,7 +179,7 @@ export default function FeaturedProjects() {
         </div>
       </div>
 
-      <div className=" section container bg-gradient-to-r from-[#10ABFF] to-[#4B45FF] mt-32">
+      <div className=" section container bg-gradient-to-r from-[#10ABFF] to-[#4B45FF] mt-32 shadow-xl hover:shadow-2xl shadow-primary/30 rounded-2xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-thin text-heading">
             Lets Build Something <br />
@@ -195,21 +195,25 @@ export default function FeaturedProjects() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="flex flex-col sm:flex-row gap-4 mt-6 justify-center items-center "
+          className="flex flex-col lg:flex-row gap-4 mt-6 justify-center items-center  "
         >
           <a
             href="#contact"
-            className="px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg bg-black text-primary font-semibold shadow-lg hover:bg-bg-gradient-to-b  transition-transform duration-300 hover:scale-105 text-center 
-               text-sm sm:text-base md:text-lg cursor-pointer"
+            className=" px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg bg-black text-primary font-semibold shadow-lg hover:bg-bg-gradient-to-b  transition-transform duration-300 hover:scale-105 text-center 
+               text-sm sm:text-base  md:text-lg cursor-pointer"
           >
             Start a Project
           </a>
           <a
             href="#about"
-            className=" border border-black/20 text-primary font-semibold hover:bg-primary/20 hover:text-white  px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg  shadow-lg hover:bg-bg-gradient-to-b  transition-transform duration-300 hover:scale-105 text-center 
-               text-sm sm:text-base md:text-lg cursor-pointer"
+            className="px-5 py-2 sm:px-6 sm:py-3 md:px-6 md:py-4
+             border border-heading/20 text-heading font-semibold
+             rounded-lg shadow-lg text-center
+             text-sm sm:text-base md:text-lg
+             transition-transform duration-300 hover:scale-105
+             hover:bg-gradient-to-b hover:from-primary hover:to-blue-600 hover:text-white"
           >
-            Learn more about me
+            Get to Know Me
           </a>
         </motion.div>
       </div>

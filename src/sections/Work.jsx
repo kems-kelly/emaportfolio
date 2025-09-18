@@ -186,9 +186,10 @@ export default function Work() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={toggleView}
-            className="px-8 py-3 rounded-2xl bg-gradient-to-r from-[#10ABFF] to-[#4B45FF] text-paragraph font-semibold shadow-lg"
+            className="px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg bg-gradient-to-r from-[#10ABFF] to-[#4B45FF] text-paragraph font-semibold shadow-lg hover:bg-bg-gradient-to-b  transition-transform duration-300 hover:scale-105 text-center 
+               text-sm sm:text-base md:text-lg cursor-pointer"
           >
-            {expanded ? "Show Less" : "Show More"}
+            {expanded ? "Show Less work" : "Show More Work"}
           </motion.button>
         </div>
       </div>

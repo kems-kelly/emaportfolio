@@ -11,7 +11,7 @@ function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl text-heading font-thin leading-tight mb-10 text-center md:text-left"
+          className="text-4xl md:text-5xl text-heading font-thin leading-tight mb-10 text-center md:text-left"
         >
           About <span className="text-primary font-medium">Me</span>
         </motion.h2>

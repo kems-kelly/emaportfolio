@@ -71,6 +71,8 @@ function About() {
                 "Figma",
                 "React",
                 "TypeScript",
+                "Webflow",
+                "Framer",
               ].map((skill, index) => (
                 <motion.span
                   key={index}

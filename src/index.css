@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* ===== Fonts ===== */
+  --font-display: "Montserrat", sans-serif;
+
+  /* ===== Breakpoints ===== */
+  --screen-sm: 380px;
+  --screen-md: 780px;
+  --screen-lg: 1024px;
+  --screen-xl: 1280px;
+
+  /* ===== Colors ===== */
+  --color-primary: #02c8ff;
+  --color-onprimary: #001e2e;
+  --color-secondary: #4a7fa7;
+  --color-accent: #1a3d63;
+  --color-accent-hover: #d97706;
+
+  /* Text */
+  --color-heading: #ffffff;
+  --color-paragraph: #dadada;
+  --color-link: #02c8ff;
+  --color-link-hover: #08c9fe;
+
+  /* Backgrounds */
+  --bg: linear-gradient(90deg, #090b0b, #0d1518);
+  --sectionbg: #0f0f0f;
+  --herobg: #0a0f10;
+  --btn: #262626;
+
+  /* ===== Effects ===== */
+  --gradient-border: linear-gradient(90deg, #e2e8f0 0%, #80d4d7 100%);
+  --gradient: linear-gradient(90deg, #02c8ff, #4b45ff);
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+  /* ===== Spacing ===== */
+  /* Section */
+  --section-padding-sm: 4rem; /* mobile */
+  --section-padding-md: 6rem; /* tablet */
+  --section-padding-lg: 8rem; /* desktop */
+
+  /* Container padding (horizontal gutters) */
+  --container-padding-sm: 1.5rem;
+  --container-padding-md: 2rem;
+  --container-padding-lg: 5rem;
+
+  /* NAV */
+  --padding-nav-py-lg: 1rem;
+  --padding-nav-px-lg: 5rem;
+  --container-max: 1280px;
+
+  /* Element spacing (margins, gaps) */
+  --gap-xs: 0.5rem; /* 8px */
+  --gap-sm: 1rem; /* 16px */
+  --gap-md: 1.5rem; /* 24px */
+  --gap-lg: 2rem; /* 32px */
+  --gap-xl: 3rem; /* 48px */
+
+  /* Typography Tokens */
+  --font-size-h1: 3rem; /* 48px */
+  --font-size-h2: 2.25rem; /* 36px */
+  --font-size-h3: 1.75rem; /* 28px */
+  --font-size-body: 1rem; /* 16px */
+  --font-size-small: 0.875rem; /* 14px */
+
+  --line-height-heading: 1.2;
+  --line-height-body: 1.6;
+
+  /* Buttons */
+  --btn-padding-y: 0.75rem;
+  --btn-padding-x: 1.5rem;
+  --btn-radius: 0.5rem;
+
+  /* Cards */
+  --card-padding: 2rem;
+  --card-radius: 0.75rem;
+
+  /* Containers */
+  --container-max: 1280px;
+  --container-padding: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* section {
+  padding-block: var(--section-padding-sm);
+  padding-inline: var(--container-padding-sm);
+}
+
+@media (min-width: 768px) {
+  section {
+    padding-block: var(--section-padding-md);
+    padding-inline: var(--container-padding-md);
+  }
+
+  .container {
+    padding-inline: var(--container-padding-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding-block: var(--section-padding-lg);
+    padding-inline: var(--container-padding-lg);
+  }
+
+  .container {
+    padding-inline: var(--container-padding-lg);
+  }
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 1200px;
+  padding-inline: var(--container-padding-sm);
+} */
+.section {
+  padding-block: var(--section-padding-sm);
+  padding-inline: var(--container-padding-sm);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-block: var(--section-padding-md);
+    padding-inline: var(--container-padding-md);
+  }
+
+  .container {
+    padding-inline: var(--container-padding-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-block: var(--section-padding-lg);
+    padding-inline: var(--container-padding-lg);
+  }
+
+  .container {
+    padding-inline: var(--container-padding-lg);
+  }
+}

@@ -21,7 +21,7 @@ const allCaseStudies = [
     tags: ["UX Research", "Prototyping", "Mobile Design"],
     image: kolo,
     imageAlt: "Fintech app mockups",
-    link: "https://www.behance.net/your-behance-link",
+    link: "https://www.behance.net/gallery/232525501/KoloFund-Fintech-Savings-App",
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const allCaseStudies = [
     tags: ["Conversion Optimization", "Accessibility", "Frontend"],
     image: checkAi,
     imageAlt: "E-commerce app mockups",
-    link: "https://www.behance.net/your-behance-link",
+    link: "https://www.behance.net/gallery/186984891/Check-AI-An-AI-Bias-Detection-Tool-(UI-UX-Case-Study)",
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ const allCaseStudies = [
     tags: ["Dashboard", "Healthcare", "Data Visualization"],
     image: healthaxis,
     imageAlt: "Healthcare dashboard mockups",
-    link: "https://www.behance.net/your-behance-link",
+    link: "https://www.behance.net/gallery/234250419/Seamless-Patient-and-Hospital-Management-System-(SaaS)",
   },
   {
     id: 4,
@@ -61,7 +61,7 @@ const allCaseStudies = [
     tags: ["EdTech", "Gamification", "Frontend"],
     image: "/images/lms-mock.png",
     imageAlt: "Learning management system mockups",
-    link: "https://www.behance.net/your-behance-link",
+    link: "https://www.behance.net/gallery/188361317/Solar-sage-Renewable-Energy-Website",
   },
 ];
 

@@ -10,7 +10,7 @@ function Nav() {
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
     { id: "work", label: "Work" },
-    { id: "project", label: "Projects" },
+    { id: "project", label: "Project" },
     { id: "contact", label: "Contact" },
   ];
 

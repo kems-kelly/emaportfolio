@@ -16,42 +16,70 @@ const projects = [
     title: "KoloFund",
     desc: "A savings and investment app built with design thinking principles.",
     img: kolos,
-    links: { figma: "#", behance: "#", live: "#" },
+    links: {
+      figma:
+        "https://www.figma.com/proto/zkTIMSB81MjlyctqnP1Vwv?content-scaling=fixed&kind=proto&node-id=588-32559&page-id=87:23054&scaling=min-zoom&starting-point-node-id=588:32543",
+      behance:
+        "https://www.behance.net/gallery/232525501/KoloFund-Fintech-Savings-App",
+      live: "https://kolofunds.framer.website/",
+    },
   },
   {
     id: 2,
     title: "CheckAI",
     desc: "AI-powered tool for smarter decisions with intuitive UX.",
     img: checkai,
-    links: { figma: "#", behance: "#", live: "#" },
+    links: {
+      figma:
+        "https://www.figma.com/design/zkTIMSB81MjlyctqnP1Vwv/KoloFund?node-id=727-24206&t=1L7d6YIGoYCJpua7-1",
+      behance:
+        "https://www.behance.net/gallery/186984891/Check-AI-An-AI-Bias-Detection-Tool-(UI-UX-Case-Study)/modules/1057299763",
+      live: "https://www.figma.com/design/zkTIMSB81MjlyctqnP1Vwv/KoloFund?node-id=727-24206&t=1L7d6YIGoYCJpua7-1",
+    },
   },
   {
     id: 3,
     title: "HealthAxis",
     desc: "Healthcare SaaS platform focused on better data management.",
     img: health,
-    links: { figma: "#", behance: "#" },
+    links: {
+      figma: "https://www.figma.com/",
+      behance: "https://www.behance.net/",
+      live: "https://www.behance.net/",
+    },
   },
   {
     id: 4,
     title: "Project Four",
     desc: "Concept project showcasing creative interactions.",
     img: proj4,
-    links: { figma: "#", behance: "#", live: "#" },
+    links: {
+      figma: "https://www.figma.com/",
+      behance: "https://www.behance.net/",
+      live: "https://www.behance.net/",
+    },
   },
   {
     id: 5,
     title: "Project Five",
     desc: "Modern UI exploration with emphasis on scalability.",
     img: proj5,
-    links: { figma: "#", behance: "#", live: "#" },
+    links: {
+      figma: "https://www.figma.com/",
+      behance: "https://www.behance.net/",
+      live: "https://www.behance.net/",
+    },
   },
   {
     id: 6,
     title: "Project Six",
     desc: "End-to-end product design case study with live prototype.",
     img: proj6,
-    links: { figma: "#", behance: "#", live: "#" },
+    links: {
+      figma: "https://www.figma.com/",
+      behance: "https://www.behance.net/",
+      live: "https://www.behance.net/",
+    },
   },
 ];
 
@@ -101,14 +129,18 @@ export default function FeaturedProjects() {
                     {proj.links.figma && (
                       <a
                         href={proj.links.figma}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-[var(--btn)] text-sm px-3 text-paragraph py-1 rounded-full hover:bg-[var(--btn)]/50 transition"
                       >
-                        figma
+                        Figma
                       </a>
                     )}
                     {proj.links.behance && (
                       <a
                         href={proj.links.behance}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-[var(--btn)] text-sm px-3 text-paragraph py-1 rounded-full hover:bg-[var(--btn)]/50 transition"
                       >
                         Behance
@@ -117,6 +149,8 @@ export default function FeaturedProjects() {
                     {proj.links.live && (
                       <a
                         href={proj.links.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-[var(--btn)] text-sm px-3 text-paragraph py-1 rounded-full hover:bg-[var(--btn)]/50 transition"
                       >
                         Live Demo
